@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add grocery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="additems.css">
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <h1>Add New Grocery (For Staff Use Only)</h1>
+        <hr>
+
+        <form action="https://express-grocery-api.herokuapp.com/grocery/add/admin/pass" method="POST">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Product Id</label>
+                <input class="form-control" name="productid", type="number">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Grocery Name</label>
+                <input class="form-control" name="grocery-name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Price /Kg</label>
+                <input class="form-control" name="price", type="number">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Quantitiy</label>
+                <input class="form-control" name="quantity">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="link3"><a href="index.html"> Consumer's Page</a></div>
+</body>
+
+</html>
