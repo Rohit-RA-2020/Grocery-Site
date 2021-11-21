@@ -11,7 +11,7 @@ const loadgrocery = () => {
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">${grocery['grocery-name']}</h5>
+                        <h5 class="card-title">${grocery['groceryname']}</h5>
                         
 
                         <div>Id: ${grocery.productid}</div>
